@@ -145,7 +145,7 @@ let dad = new Octopus('Man with the 8 strong legs')
 // 参数属性，上面的栗子可以改版成如下：
 class OctopusClone {
   readonly numberOfLegs: number = 8
-  constructor(readonly name: string) {}
+  constructor(readonly name: string) { }
 }
 
 // 存取器 通过getters/setters来截取对对象成员的访问
@@ -153,7 +153,7 @@ class OctopusClone {
 let passcode = "secret passcode"
 class Employeee {
   private _fullName: string
-  
+
   get fullName(): string {
     return this._fullName
   }
@@ -182,7 +182,7 @@ class Grid {
     return Math.sqrt(xDist * xDist + yDist * yDist) / this.scale
   }
   constructor(public scale: number) {
-    
+
   }
 }
 
@@ -206,7 +206,7 @@ abstract class Animal4 {
 // 抽象方法必须包含 abstract关键字并且可以包含访问修饰符
 abstract class Department {
   constructor(public name: string) {
-    
+
   }
   printName(): void {
     console.log(`Department name: ${this.name}`)
